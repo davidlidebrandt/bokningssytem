@@ -11,8 +11,39 @@
   --dark-blue-c: #212A3E;
 }
 
-
 body {
   font-family: 'Nunito', sans-serif;
   font-family: 'Nunito Sans', sans-serif;
+}
+
+.light-c {
+  color: var(--light-c);
+}
+
+.light-blue-c {
+  color: var(--light-blue-c);
+}
+
+.medium-blue-c {
+  color: var(--medium-blue-c);
+}
+
+.dark-blue-c {
+  color: var(--dark-blue-c);
+}
+
+.light-bg {
+  background-color: var(--light-c);
+}
+
+.light-blue-bg {
+  background-color: var(--light-blue-c);
+}
+
+.medium-blue-bg {
+  background-color: var(--medium-blue-c);
+}
+
+.dark-blue-bg {
+  background-color: var(--dark-blue-c);
 }
