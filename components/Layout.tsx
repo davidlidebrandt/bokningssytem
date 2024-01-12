@@ -1,10 +1,13 @@
 import React, { ReactNode } from 'react'
+import Footer from './Footer'
+import Header from './Header'
 
 function Layout({children}:React.PropsWithChildren) {
   return (
-    <><header>Hey</header>
+    <>
+    <Header></Header>
     {children}
-    <footer>Hey again</footer>
+    <Footer></Footer>
     </>
   )
 }
