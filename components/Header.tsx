@@ -8,9 +8,9 @@ const Header = () => {
 	const toggle = ()=> {setShowHamburger(!showHamburger)};
 
 	return (
-		<header className="medium-blue-bg py-6 px-12 light-c">
+		<header className="medium-blue-bg py-6 px-12 light-c text-sm">
 
-			<nav className="md:flex items-center">
+			<nav className="lg:flex items-center">
 				<h1 className={`inline-block mb-3 ${showHamburger? "" : "hidden"}`}>
 					<Image
 						className="rounded"
@@ -21,7 +21,7 @@ const Header = () => {
                         priority={true}
 					/>
 				</h1>
-				<button className={`md:hidden float-right align-bottom ${showHamburger? "": "hidden"}`} onClick={toggle}>
+				<button className={`lg:hidden float-right align-bottom ${showHamburger? "": "hidden"}`} onClick={toggle}>
 					<div className="w-3 h-1 light-bg mb-2"></div>
 					<div className="w-5 h-1 light-bg mb-2"></div>
 					<div className="w-5 h-1 light-bg mb-2"></div>
@@ -39,7 +39,7 @@ const Header = () => {
 					<li className="mt-4"><Link href="/register">Register Now</Link></li>
 					<li className="mt-4"><Link href="/login">Log In</Link></li>
 				</ul>
-				<ul className={`hidden md:flex gap-16 px-16 w-full`}>
+				<ul className={`hidden lg:flex gap-16 px-16 w-full`}>
 					<li className="mt-4"><Link href="/booking">Book Now</Link></li>
 					<li className="mt-4"><Link href="/about">About Us</Link></li>
 					<li className="mt-4 ml-28"><Link href="/register">Register Now</Link></li>
