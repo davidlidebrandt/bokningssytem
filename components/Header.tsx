@@ -42,7 +42,7 @@ const Header = () => {
 				<ul className={`hidden lg:flex gap-16 px-16 w-full`}>
 					<li className="mt-4"><Link href="/booking">Book Now</Link></li>
 					<li className="mt-4"><Link href="/about">About Us</Link></li>
-					<li className="mt-4 ml-28"><Link href="/register">Register Now</Link></li>
+					<li className="mt-4 ml-52"><Link href="/register">Register Now</Link></li>
 					<li className="mt-4"><Link href="/login">Log In</Link></li>
 				</ul>
 			</nav>
