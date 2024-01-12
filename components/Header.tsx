@@ -2,10 +2,14 @@ import React, { useState } from "react";
 import Image from "next/image";
 import logo from "../public/images/logo.png"
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Header = () => {
 	const [showHamburger, setShowHamburger] = useState(true);
 	const toggle = ()=> {setShowHamburger(!showHamburger)};
+	const router = useRouter();
+
+	console.log(router.pathname)
 
 	return (
 		<header className="medium-blue-bg py-6 px-12 light-c text-sm">
@@ -34,16 +38,16 @@ const Header = () => {
 					<div className="mt-4">Close</div>
 				</button>
 				<ul className={`${showHamburger? "hidden": ""}`}>
-					<li className="mt-4"><Link href="/booking">Book Now</Link></li>
-					<li className="mt-4 place-self-start"><Link href="/about">About Us</Link></li>
-					<li className="mt-4"><Link href="/register">Register Now</Link></li>
-					<li className="mt-4"><Link href="/login">Log In</Link></li>
+					<li className={`mt-4 ${router.pathname == "/booking"? "opacity-50" : ""}`}><Link href="/booking">Book Now</Link></li>
+					<li className={`mt-4 ${router.pathname == "/about"? "opacity-50" : ""}`}><Link href="/about">About Us</Link></li>
+					<li className={`mt-4 ${router.pathname == "/register"? "opacity-50" : ""}`}><Link href="/register">Register Now</Link></li>
+					<li className={`mt-4 ${router.pathname == "/login"? "opacity-50" : ""}`}><Link href="/login">Log In</Link></li>
 				</ul>
 				<ul className={`hidden lg:flex gap-16 px-16 w-full`}>
-					<li className="mt-4"><Link href="/booking">Book Now</Link></li>
-					<li className="mt-4"><Link href="/about">About Us</Link></li>
-					<li className="mt-4 ml-52"><Link href="/register">Register Now</Link></li>
-					<li className="mt-4"><Link href="/login">Log In</Link></li>
+					<li className={`mt-4 ${router.pathname == "/booking"? "opacity-50" : ""}`}><Link href="/booking">Book Now</Link></li>
+					<li className={`mt-4 ${router.pathname == "/about"? "opacity-50" : ""}`}><Link href="/about">About Us</Link></li>
+					<li className={`mt-4 ml-52 ${router.pathname == "/register"? "opacity-50" : ""}`}><Link href="/register">Register Now</Link></li>
+					<li className={`mt-4 ${router.pathname == "/login"? "opacity-50" : ""}`}><Link href="/login">Log In</Link></li>
 				</ul>
 			</nav>
 		</header>
