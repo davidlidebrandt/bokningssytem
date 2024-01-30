@@ -17,7 +17,7 @@ const filterOption = (
 ) => (option?.label ?? "").toLowerCase().includes(input.toLowerCase());
 
 export default function booking() {
-	const [isModalOpen, setIsModalOpen] = useState(false);
+	const [isModalOpen, setIsModalOpen] = useState("hidden");
 	const { token } = theme.useToken();
 
 	const wrapperStyle: React.CSSProperties = {
@@ -27,41 +27,38 @@ export default function booking() {
 	};
 
 	const showModal = () => {
-		setIsModalOpen(true);
+		setIsModalOpen("");
 	};
 
-	const handleOk = () => {
-		setIsModalOpen(false);
+	const handleCloseModal = () => {
+		setIsModalOpen("hidden");
 	};
 
-	const handleCancel = () => {
-		setIsModalOpen(false);
-	};
 
 	const onPanelChange = (value: Dayjs, mode: CalendarProps<Dayjs>['mode']) => {
 		console.log(value.format('YYYY-MM-DD'), mode);
 	  };
+
+	
 	return (
 		<main className="light-bg py-16 px-6">
-			<section className="light-blue-bg py-12 dark-blue-c max-w-5xl m-auto">
+			<section className="light-blue-bg py-12 dark-blue-c max-w-5xl m-auto z-0">
 				<Button type="primary" onClick={showModal}>
 					Open Modal
 				</Button>
-				<Modal
-					className="grid place-items-center dark-blue-bg p-0"
-					open={isModalOpen}
-					onOk={handleOk}
-					onCancel={handleCancel}
-					okText="Continue"
+				
+				<div
+					className={`${isModalOpen} absolute grid place-items-center dark-blue-bg p-6 z-50}`}
+					
 				>
-					<h3 className="w-full text-center dark-blue-bg m-0">Company name</h3>
+					<h3 className="w-full text-center light-c m-0 mt-6">Company name</h3>
 					<div style={wrapperStyle} className="m-6">
 						<Calendar
 							fullscreen={false}
 							onPanelChange={onPanelChange}
 						/>
 					</div>
-				</Modal>
+				</div>
 
 				<h2 className="dark-blue-c text-center mb-8 font-bold">
 					Book now
