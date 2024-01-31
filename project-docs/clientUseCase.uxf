@@ -1,0 +1,20 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLActor</id><coordinates><x>10</x><y>260</y><w>80</w><h>110</h></coordinates><panel_attributes>Client User</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>230</x><y>300</y><w>120</w><h>50</h></coordinates><panel_attributes>Search for 
+company
+
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>80</x><y>340</y><w>170</w><h>210</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>150;183;10;10</additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>230</x><y>400</y><w>120</w><h>60</h></coordinates><panel_attributes>View time slots
+for specific 
+company
+
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>340</y><w>90</w><h>80</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;Includes&gt;&gt;</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>230</x><y>510</y><w>120</w><h>60</h></coordinates><panel_attributes>Book a 
+time slot
+
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>450</y><w>90</w><h>80</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;Includes&gt;&gt;</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>230</x><y>120</y><w>120</w><h>50</h></coordinates><panel_attributes>View contact
+information
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>70</x><y>250</y><w>190</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>170;10;10;80</additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>230</x><y>200</y><w>130</w><h>70</h></coordinates><panel_attributes>View information
+about Easy Booking
+
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>80</x><y>320</y><w>170</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>150;10;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>80</x><y>330</y><w>190</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>170;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>70</x><y>160</y><w>210</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>190;10;10;170</additional_attributes></element><element><id>UMLClass</id><coordinates><x>110</x><y>80</y><w>390</w><h>530</h></coordinates><panel_attributes>
+bg=black
+layer=2</panel_attributes><additional_attributes></additional_attributes></element></diagram>

@@ -1,0 +1,44 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLActor</id><coordinates><x>10</x><y>260</y><w>100</w><h>110</h></coordinates><panel_attributes>Company User</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>220</x><y>110</y><w>120</w><h>40</h></coordinates><panel_attributes>Register
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>220</x><y>190</y><w>120</w><h>40</h></coordinates><panel_attributes>Log in
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>220</x><y>270</y><w>120</w><h>50</h></coordinates><panel_attributes>View calendar/
+account page
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>280</y><w>210</w><h>280</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;Include&gt;&gt;</panel_attributes><additional_attributes>10;260;140;190;130;30;10;15</additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>220</x><y>520</y><w>120</w><h>40</h></coordinates><panel_attributes>Delete booking
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>140</y><w>80</w><h>70</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;Include&gt;&gt;</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>220</x><y>370</y><w>120</w><h>40</h></coordinates><panel_attributes>Block time slots
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>290</y><w>130</w><h>190</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;Include&gt;&gt;</panel_attributes><additional_attributes>10;170;60;90;10;15</additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>220</x><y>440</y><w>120</w><h>50</h></coordinates><panel_attributes>Add booking
+option
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>710</x><y>40</y><w>220</w><h>170</h></coordinates><panel_attributes>Cloud Server
+_umletcode=
+//cloud
+
+//DrawConfig Parameters (bg: bgColor?, fg: fgColor?, lt: lineType?, lw: lineWidth?, transparency: transparencyValue?)
+var cloudConfig = {fg: '#00BFFF', lt: '-', lw: 2}
+
+//Parameters (x, y, width, height, start, extent, open, drawConfig?)
+drawArc(60,70,50,50,30,130,true, cloudConfig)
+drawArc(36,83,49,50,70,100,true, cloudConfig)
+drawArc(73,83,50,30,-100,180,true, cloudConfig)
+drawArc(36,84,60,40,180,180,true, cloudConfig)
+var innerCloudConfig= {fg: '#87CEFA', lt: '-', lw: 2}
+drawArc(45,87,40,30,170,180,true, innerCloudConfig)
+drawArc(75,79,20,20,30,130,true, innerCloudConfig)
+
+//server
+//Parameters (x, y, width, height, radius, drawConfig?)
+drawRectangleRound(140,50,60,90,5, {bg: 'gray', fg: 'black', lt: '-', lw: 2})
+
+//Parameters (x, y, width, height, drawConfig?)
+drawRectangle(150,60,40,8)
+drawRectangle(150,80,40,8)
+drawRectangle(150,100,40,8)
+
+//Parameters (x, y, radius, drawConfig?)
+drawCircle(170,125,5)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>150</x><y>70</y><w>390</w><h>530</h></coordinates><panel_attributes>
+bg=black
+layer=2</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>80</x><y>140</y><w>190</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>170;10;10;160</additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>220</y><w>180</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>160;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>220</y><w>80</w><h>70</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;Include&gt;&gt;</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>310</y><w>80</w><h>80</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;Include&gt;&gt;</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>330</y><w>140</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>120;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>80</x><y>360</y><w>160</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>140;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>60</x><y>360</y><w>180</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>160;180;10;10</additional_attributes></element></diagram>
